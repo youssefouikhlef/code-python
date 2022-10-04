@@ -1,0 +1,12 @@
+p=float(input("entrez un val:"))
+r=float(input("entrez un val:"))
+try:
+    p=float(p)
+    r=float(r)
+    P=3.14
+    A=r**2*P
+    F=p*A
+    print("la force est:",F,"N")
+except:
+    print("la val de préssion et/ou rayon vous avez donné par caractére")  
+print(F)
