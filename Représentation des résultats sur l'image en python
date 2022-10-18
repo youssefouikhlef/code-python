@@ -1,0 +1,16 @@
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+import matplotlib.pyplot as plt
+img = Image.open('C://Users//ouikl//Downloads//Capture.png')
+I1 = ImageDraw.Draw(img)
+font = ImageFont.truetype('arial',28)
+I1.text((196, 140), "v1=5m/s", fill=(0,255, 255) ,font=font)
+I1.text((590, 140), "v2=k*v1", fill=(0,255, 255) ,font=font)
+I1.text((420, 37), "&=10°", fill=(0,255, 255) ,font=font)
+I1.text((420, 150), "L=1.04m", fill=(0,255, 255) ,font=font)
+I1.text((160, 100), "D1=200mm", fill=(0,255, 255) ,font=font)
+I1.text((570, 120), "D2", fill=(0,255, 255) ,font=font)
+#a=plt.imread(img)
+plt.imshow(img)
+#img.save("C://Users//ouikl//Downloads//Capture.png")
