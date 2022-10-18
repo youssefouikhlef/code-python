@@ -1,0 +1,13 @@
+D1 = float(input("Donner la valeur de D1 en mm :"))
+Angle = float(input("Donner la valeur de l'angle d'iclinison en ° :"))
+while Angle>45:
+    print("Il faut que l'angle soit inférieur à 45° ")
+    Angle = float(input("Donner la valeur de l'angle d'iclinison en ° :"))
+e = float (input("Donner la masse volumique de votre fluide en kg/m3: "))
+V1 = float(input("Donner la vitesse d'entrée de votre fluide en m/S: "))
+coeff= float(input("Donner la multiplication de vitesse que vous souhitez attendre à la sortie:"))
+from math import tan,sqrt
+L = D1/(2*tan (Angle*3.14/180))*(1- sqrt(1/coeff))
+P=-((V1*coeff)*2-V1*2)*e/2
+print("L est égale à:",L,"mm")
+print("la variation de pression est égale à :",P,"Pa")
