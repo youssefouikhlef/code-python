@@ -1,7 +1,7 @@
 D1 = float(input("Donner la valeur de D1 en mm :"))
 Angle = float(input("Donner la valeur de l'angle d'iclinison en ° :"))
-while Angle>45:
-    print("Il faut que l'angle soit inférieur à 45° ")
+while Angle>90°:
+    print("Il faut que l'angle soit inférieur à 90° ")
     Angle = float(input("Donner la valeur de l'angle d'iclinison en ° :"))
 e = float (input("Donner la masse volumique de votre fluide en kg/m3: "))
 V1 = float(input("Donner la vitesse d'entrée de votre fluide en m/S: "))
